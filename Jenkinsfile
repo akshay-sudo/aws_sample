@@ -13,6 +13,7 @@ pipeline {
         stage('checkout') {
             steps {
                  script{
+                        dir('/')
                         {
                             git "https://github.com/akshay-sudo/aws_sample.git"
                         }
